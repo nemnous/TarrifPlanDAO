@@ -7,6 +7,8 @@ import java.util.ArrayList;
 
 class TarrifPlanManagement implements TarrifPlanDAO{
 
+
+	//this list acts as the database to store the plans instead we can use JDBC.
 	private List<TarrifPlan> plans;
 
 	public TarrifPlanManagement() {
@@ -43,8 +45,12 @@ class TarrifPlanManagement implements TarrifPlanDAO{
 
 /*
  * to add plan "ADD name typeOfPlan Tarrif Validity Rental"
- * remove plan 
+ * remove plan "DELETE plan_name"
+ * show all plans "SHOWALL"
+ * update the tarrif "UPDATE planName newTarrif"
 */
+
+
 public class Tester {
 	public static void main(String[] args) {
 		TarrifPlanDAO obj = new TarrifPlanManagement();
